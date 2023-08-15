@@ -1,0 +1,10 @@
+<button [disabled]="isLoading">
+  {{ isLoading ? "" : content }}
+  <div
+    class="spinner-border spinner-border-sm z-1"
+    role="status"
+    *ngIf="isLoading"
+  >
+    <span class="visually-hidden">Loading...</span>
+  </div>
+</button>

@@ -1,0 +1,20 @@
+button {
+  width: 100%;
+  position: relative;
+  border-radius: 20px;
+  border: 1px solid #4bb6b7;
+  background-color: #4bb6b7;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 700;
+  padding: 0.65rem 1rem;
+  letter-spacing: 1px;
+  transition: 0.3s ease-in-out;
+  &:hover {
+    letter-spacing: 3px;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}

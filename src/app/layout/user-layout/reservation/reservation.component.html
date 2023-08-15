@@ -1,0 +1,11 @@
+<div
+  *ngFor="let table of listTable"
+  class="bg-primary w-50"
+  (click)="updateTable(table)"
+>
+  <h4>{{ table.tableID }}</h4>
+  <h4>{{ table.name }}</h4>
+
+  <h4>{{ table.numOfSeat }}</h4>
+  <h4>{{ table.available }}</h4>
+</div>

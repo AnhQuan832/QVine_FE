@@ -1,0 +1,59 @@
+/* You can add global styles to this file, and also import other style files */
+@import "../node_modules/ng-zorro-antd/ng-zorro-antd.css";
+
+:root {
+  --primary_color: #f34949;
+
+  --background_color: #fff;
+  --text_color: #000;
+  --header_height: 100px;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  color: #000;
+  background-color: #f4ede5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+}
+
+h1,
+h2 {
+  font-weight: 700;
+}
+
+a:focus,
+button:focus {
+  outline: none;
+  box-shadow: none;
+}
+.btn-primary {
+  font-size: 1.1rem;
+  display: inline-block;
+  background-color: #f34949;
+  border: none;
+  color: #fff;
+  border-radius: 30px;
+  padding: 9px 25px;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+.btn-primary:hover {
+  background-color: #f5793b;
+  color: #fff;
+}
