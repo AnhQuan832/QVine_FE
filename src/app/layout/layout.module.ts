@@ -8,7 +8,7 @@ import { LayoutRoutingModule } from './layout-routing.module';
 import { NzInputModule } from 'ng-zorro-antd/input';
 
 
-import { AuthenticationComponent } from './authentication/authentication.component';
+import { AuthenticationComponent } from '../pages/authentication/authentication.component';
 import { SharedModule } from '../shared/shared.module';
 
 

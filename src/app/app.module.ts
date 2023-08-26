@@ -12,12 +12,18 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SharedModule } from './shared/shared.module';
+import { HeroBannerComponent } from './pages/hero-banner/hero-banner.component';
+import { MenuComponent } from './pages/menu/menu.component';
+import { AboutUsComponent } from './pages/about-us/about-us.component';
 
 registerLocaleData(en);
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HeroBannerComponent,
+    MenuComponent,
+    AboutUsComponent
   ],
   imports: [
     BrowserModule,

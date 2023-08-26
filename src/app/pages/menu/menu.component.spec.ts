@@ -1,16 +1,16 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ErrorPageComponent } from './error-page.component';
+import { MenuComponent } from './menu.component';
 
-describe('ErrorPageComponent', () => {
-  let component: ErrorPageComponent;
-  let fixture: ComponentFixture<ErrorPageComponent>;
+describe('MenuComponent', () => {
+  let component: MenuComponent;
+  let fixture: ComponentFixture<MenuComponent>;
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [ErrorPageComponent]
+      declarations: [MenuComponent]
     });
-    fixture = TestBed.createComponent(ErrorPageComponent);
+    fixture = TestBed.createComponent(MenuComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

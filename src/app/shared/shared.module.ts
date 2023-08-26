@@ -8,7 +8,6 @@ import { HeaderComponent } from './components/header/header.component';
 import { NzIconModule } from 'ng-zorro-antd/icon';
 import { NzCarouselModule } from 'ng-zorro-antd/carousel';
 import { FooterComponent } from './components/footer/footer.component';
-import { ErrorPageComponent } from './pages/error-page/error-page.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +15,6 @@ import { ErrorPageComponent } from './pages/error-page/error-page.component';
     SecondaryButtonComponent,
     HeaderComponent,
     FooterComponent,
-    ErrorPageComponent,
 
 
   ],

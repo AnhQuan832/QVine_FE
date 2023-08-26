@@ -1,0 +1,27 @@
+.hero__banner {
+  overflow: hidden;
+  background-color: var(--color-black);
+  &-h1 {
+    font-family: var(--font-base);
+    color: var(--color-golden);
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: capitalize;
+    line-height: 117px;
+    font-size: 90px;
+  }
+  &_img {
+    [nz-carousel-content] {
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      color: #fff;
+      overflow: hidden;
+      img {
+        border-radius: 5px;
+        width: 500px;
+        object-position: center;
+      }
+    }
+  }
+}

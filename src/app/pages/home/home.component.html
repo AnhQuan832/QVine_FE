@@ -1,0 +1,22 @@
+<div class="hero__banner section__padding d-flex gap-2" id="home">
+  <div class="hero__banner_info col-6">
+    <div>
+      <p class="p__cormorant">Enjoy meal</p>
+      <!-- <img src="{images.spoon}" alt="spoon_image" class="spoon__img" /> -->
+    </div>
+    <h1 class="hero__banner-h1">The Key To Fine Dining</h1>
+    <p class="p__opensans">
+      Sit tellus lobortis sed senectus vivamus molestie. Condimentum volutpat
+      morbi facilisis quam scelerisque sapien. Et, penatibus aliquam amet tellus
+    </p>
+    <button type="button" class="custom__button">Explore Menu</button>
+  </div>
+
+  <div class="hero__banner_img col-6">
+    <nz-carousel nzAutoPlay [nzDots]="false">
+      <div nz-carousel-content *ngFor="let index of data">
+        <img src="{{ index }}" alt="" />
+      </div>
+    </nz-carousel>
+  </div>
+</div>

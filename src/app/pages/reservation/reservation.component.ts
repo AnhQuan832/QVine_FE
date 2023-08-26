@@ -5,7 +5,7 @@ import { ReservationService } from 'src/app/core/services/reservation.service';
 import { Table } from 'src/app/core/models/Table';
 
 @Component({
-  selector: 'app-reservation',
+  selector: 'app-user-reservation',
   templateUrl: './reservation.component.html',
   styleUrls: ['./reservation.component.scss']
 })

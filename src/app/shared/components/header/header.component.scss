@@ -1,61 +1,71 @@
-@import "../../../../mixins.scss";
 .navbar {
-  height: var(--header_height);
-  background-color: #fff !important;
-  .container-fluid {
-    background-color: #fff !important;
-  }
-  .navbar-nav {
-    .dropdown-menu {
-      border: none;
-      border-bottom: 2px solid #f34949;
-      border-radius: 0 !important;
-      box-shadow: -5px 8px 20px 0px rgba(229, 16, 2, 0.15);
-    }
-    .nav-item {
-      margin: 0 0.5rem;
-      .nav-link {
-        color: #000;
-      }
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
-      font-size: 1.2rem;
+  background: var(--color-black);
+
+  padding: 1rem 2rem;
+  &-logo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    img {
+      width: 80px;
+    }
+  }
+  &-links {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    list-style: none;
+    li {
+      margin: 0 1rem;
+      cursor: pointer;
+
       &:hover {
-        > a {
-          text-decoration: none;
-          color: #e22104;
-        }
+        color: var(--color-grey);
       }
     }
   }
-  img {
-    height: 60px;
-  }
-  .navbar-brand-center {
-    padding-left: 70px;
-    padding-right: 70px;
-    display: none !important;
-    @include lg {
-      display: block !important;
+  &-login {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    a {
+      margin: 0 1rem;
+      text-decoration: none;
+      transition: 0.5s ease;
+      &:hover {
+        border-bottom: 1px solid var(--color-golden);
+      }
+    }
+    div {
+      width: 1px;
+      height: 30px;
+      background: var(--color-grey);
     }
   }
+  &-smallscreen {
+    display: none;
+    &_overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100vh;
+      background: var(--color-black);
+      transition: 0.5s ease;
 
-  @include lg {
-    .navbar-nav {
-      width: 50%;
+      flex-direction: column;
+      z-index: 5;
     }
-    .dropdown {
-      .dropdown-menu {
-        display: block;
-        opacity: 0;
-        transition: all 500ms ease;
-      }
-      &:hover .dropdown-menu {
-        display: block;
-        opacity: 1;
-      }
-    }
-    .navbar-brand {
-      display: none;
-    }
+  }
+  a {
+    color: var(--color-white);
+    font-size: 1.1rem;
   }
 }

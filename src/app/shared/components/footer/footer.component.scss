@@ -1,9 +1,14 @@
-.footer-widget {
-  .footer-logo {
-    height: 50px;
-  }
-  a {
-    text-decoration: none;
-    color: var(--text_color);
+footer {
+  background-color: var(--color-black);
+  color: var(--color-white);
+  .footer-widget {
+    .footer-logo {
+      height: 50px;
+    }
+    a,
+    h4 {
+      text-decoration: none;
+      color: var(--text_color);
+    }
   }
 }
